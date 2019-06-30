@@ -9,7 +9,7 @@ body{
 
 .container {
     min-width: 360px ;
-    min-height: 710px;
+    min-height: 667px;
     max-width: 479px;
     max-height: 896px;
     background: white;
@@ -293,6 +293,39 @@ li{
     }
 
 }
+
+.scisaif{
+    position: absolute;
+    top: 93.5%;
+    /* background: #eea371; */
+    animation: scianimation 6s ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.scisaif p {
+    color: rgba(255, 255, 255, 0.473);
+    font-family: sans-serif;
+    animation: sciPanimation 6s ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3s; 
+    
+}
+@keyframes scianimation {
+    
+    0% {transform: rotateY(0deg)}
+    30%{transform: rotateY(360deg)}
+    100%{transform: rotateY(360deg)}
+   
+}
+@keyframes sciPanimation {
+    
+    0% {transform: rotateY(0deg); color: white;}
+    15%{color: #ff3300;}
+    30%{transform: rotateY(360deg); color: white;}
+    100%{transform: rotateY(360deg); color: white;}
+   
+}
+
 
 
 /* visibility */
