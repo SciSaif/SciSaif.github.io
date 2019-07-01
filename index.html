@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="budget-App.css">
+    <script src="https://kit.fontawesome.com/a9a37f8c02.js"></script>
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="options">
+                <div class="budget-option ripple">
+                    <i class="fas fa-wallet fa-2x"></i>
+                    <p>Change Budget</p>
+                </div>
+                <div class="expense-option ripple">
+                    <i class="fas fa-plus-circle fa-2x"></i>
+                    <p>Add an Expense</p> 
+                </div>
+            </div>
+            <div class="budget-box invisible">
+                <p>Enter your budget:</p>
+                <div class="budget-input-box">
+                    <input type="text" placeholder="  Enter budget" class="budget-input"> 
+                    <button class="enter-budget ripple">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="expense-box invisible">
+                <p>Enter Expense Name:</p>
+                <input type="text" placeholder="  Enter Expense Name" class="expense-name-input"> 
+                <p>Enter Expense Amount:</p>
+                <div class="expense-input-box">
+                    <input type="text" placeholder="  Enter Expense Amount" class="expense-amt-input"> 
+                    <button class="enter-expense ripple">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="space-fix"></div>
+
+        <div class="display">
+            <div class="budget-display-box d">
+                <p>Budget</p>
+                <i class="fas fa-coins fa-3x"></i>
+                <p><i class="fas fa-rupee-sign dv current-budget">0</i></p>
+            </div>
+            <div class="expense-display-box d">
+                <p>Expense</p>
+                <i class="fas fa-credit-card fa-3x"></i>
+                <p><i class="fas fa-rupee-sign dv current-expense">0</i></p>
+            </div>
+            <div class="balance-display-box d">
+                <p>Balance</p>
+                <i class="fas fa-rupee-sign fa-3x"></i>
+                <p><i class="fas fa-rupee-sign dv current-balance">0</i></p>
+                
+            </div>
+        </div>
+
+        <div class="clear ripple">
+            <p>clear</p> 
+        </div>
+
+        <div class="expense">
+            <div class="expense-titles">
+                <p class="expense-name-title">Expense Name </p> 
+                <p class="expense-amt-title">Expense Amount</p>
+            </div>
+            <ul>
+                
+                
+            </ul>
+        </div>
+        
+
+
+            
+    </div>
+
+
+    <div class="scisaif">
+        <p>SciSaif</p>
+    </div>
+
+    <script src="budget-App.js"></script>
+</body>
+</html>
