@@ -112,7 +112,7 @@ function changeBudget(){
     store.forEach(elem => {
         elem.Budget = budget;
     });
-    // console.log(store);
+    console.log(store);
     
     localStorage.setItem("storeExpense", JSON.stringify(store));
 }
@@ -161,7 +161,9 @@ function addExpense() {
 
 //---to delete an expense---
 function deleteExpense(element) {
+    
     const elementIdNo = element.attributes.id.value;
+    // console.log(elementIdNo);
     
     const expenseToDelete = Number(element.parentNode.querySelector('.ex-amt').innerHTML);
     // console.log(expenseToDelete);
@@ -181,6 +183,7 @@ function deleteExpense(element) {
     // console.log(index);
     getstore[index].trash = true;
     // console.log(getstore);
+    store = getstore;
     localStorage.setItem("storeExpense", JSON.stringify(getstore));
     
     
